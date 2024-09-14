@@ -140,6 +140,13 @@ pre{
   background-color: lavender;
 }
 
+#graph1{
+  background-color: #546a9b;
+  border: 2px white solid;
+  height:90%;
+  width:90%;
+}
+
 .graph1-reading-container{
   display: flex;
   align-items: center;
@@ -155,12 +162,7 @@ pre{
   background-color: #f9e4bc;
 }
 
-#graph1{
-  background-color: #546a9b;
-  border: 2px white solid;
-  height:90%;
-  width:90%;
-}
+
 
 .graph2-section{
   display:flex;
@@ -179,6 +181,12 @@ pre{
   background-color: lavender;
 }
 
+#graph2{
+  background-color: #546a9b;
+  height:90%;
+  width:90%;
+}
+
 .graph2-reading-container{
   display: flex;
   align-items: center;
@@ -187,12 +195,6 @@ pre{
   width:45%;
   border: 2px black solid;
   background-color:#F2E863;
-}
-
-#graph2{
-  background-color: #546a9b;
-  height:90%;
-  width:90%;
 }
 
 .download-data-section{
