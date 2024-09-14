@@ -1,0 +1,256 @@
+*{
+  margin:0px;
+  border:border-box;
+  text-decoration: none;
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: Neutrons;
+  src: url(neutrons.ttf);
+}
+
+@font-face{
+  font-family: Boston;
+  src: url(boston.ttf);
+}
+
+@font-face{
+  font-family: Rogshire;
+  src: url(rogshire.ttf);
+}
+
+@font-face{
+  font-family: Vampire;
+  src: url(vampire.ttf);
+}
+
+@font-face{
+  font-family: GoodBrush;
+  src: url(goodbrush.ttf);
+}
+
+@font-face{
+  font-family: Gloryse;
+  src: url(gloryse.ttf)
+}
+
+@font-face{
+  font-family: Lemon;
+  src: url(Lemon.otf);
+}
+
+.navbar{
+  
+  height: 60px;
+  background-color: #463f3a;
+  color:white;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;   
+}
+
+.logo-container{
+  height:50px;
+  width:60px;
+}
+
+#logo{
+  background-image: url("logo_1.png");
+  background-size: cover;
+  height:50px;
+  width:100%;
+}
+
+
+#teamname{
+  padding-bottom: 40px;
+  font-family: Neutrons;
+  font-size: 3.5rem;
+}
+
+a{
+  color:white;    
+}
+
+#home-tab{
+  font-family: Boston;
+  font-size: 25px;
+}
+#product-tab{
+  font-family: Boston;
+  font-size: 25px;
+}
+#data-tab{
+  font-family: Boston;
+  font-size: 25px;
+}
+#about-tab{
+  font-family: Boston;
+  font-size: 25px;
+}
+#contact-tab{
+  font-family: Boston;
+  font-size: 25px;
+}
+
+
+
+.content-area-section{
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: GoodBrush;
+  font-size: 3rem;
+  background-image: url("hero_image.jpg");
+  background-size: cover;
+  width:100%;
+  height: 700px;
+}
+pre{
+  width:100%;
+  background-color:black;
+  border-bottom: 2px white solid ;
+  border-right: 2px white solid ;
+  font-family: Lemon;
+  font-size: 3rem;
+}
+#content-area{
+  color: white;
+}
+
+.graph1-section{
+  display:flex;
+  justify-content:space-evenly;
+  width:100%;
+  height:500px;
+  background-color: #F7F7FF;
+}
+
+.graph1-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:30px;
+  width:45%;
+  border: 2px black solid;
+  background-color: lavender;
+}
+
+.graph1-reading-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:30px;
+  width:45%;
+  border: 2px black solid;
+  background-color: #e5d2ab;
+  
+}
+
+#graph1-reading{
+  background-color: #f9e4bc;
+}
+
+#graph1{
+  background-color: #546a9b;
+  border: 2px white solid;
+  height:90%;
+  width:90%;
+}
+
+.graph2-section{
+  display:flex;
+  justify-content:space-evenly;
+  width:100%;
+  height:500px;
+  background-color: #8A817C;/
+}
+.graph2-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:30px;
+  width:45%;
+  border: 2px black solid;
+  background-color: lavender;
+}
+
+.graph2-reading-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:30px;
+  width:45%;
+  border: 2px black solid;
+  background-color:#F2E863;
+}
+
+#graph2{
+  background-color: #546a9b;
+  height:90%;
+  width:90%;
+}
+
+.download-data-section{
+  display:flex;
+  justify-content:space-evenly;
+  align-items: center;
+  background-color: #463F3A;
+  width:100%;
+  height:100px;
+}
+
+.border{
+  border:1.5px solid transparent;
+}
+
+.border:hover{
+  border:1.5px solid white;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+canvas {
+  margin-top: 20px;
+}
+
+table {
+    width: 50%;
+    margin: 20px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid #000;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  canvas {
+    width: 50%;
+    height: 50%;
+    margin: 20px;
+  }
+  
