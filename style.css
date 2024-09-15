@@ -418,11 +418,3 @@ li{
   }
 }
 
-@keyframes slideInFromRight {
-  0% {
-    right: -400px;
-  }
-  100% {
-    right: 0px;
-  }
-}

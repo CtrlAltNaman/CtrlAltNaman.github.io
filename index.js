@@ -50,17 +50,21 @@ function displayTable(tableId, data) {
 
 // Function to render the first graph
 function renderGraph1(data) {
-  const labels = data[0].slice(1);
-  const values = data.slice(1).map(row => parseFloat(row[1]));
+  const labels = data[0].slice(1); // Get column labels (excluding the first one)
+  const values = data.slice(1).map(row => parseFloat(row[1])); // Extract values from the second column
+
+  // Only take the last 9 labels and values
+  const lastLabels = labels.slice(-9);
+  const lastValues = values.slice(-9);
 
   const ctx = document.getElementById('chart1').getContext('2d');
   new Chart(ctx, {
     type: 'line',
     data: {
-      labels: labels,
+      labels: lastLabels,
       datasets: [{
-        label: 'Dataset 1',
-        data: values,
+        label: 'Dataset 1 (Last 9 Values)',
+        data: lastValues,
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
         borderColor: 'rgba(75, 192, 192, 1)',
         borderWidth: 1
@@ -78,17 +82,21 @@ function renderGraph1(data) {
 
 // Function to render the second graph
 function renderGraph2(data) {
-  const labels = data[0].slice(1);
-  const values = data.slice(1).map(row => parseFloat(row[2]));
+  const labels = data[0].slice(1); // Get column labels (excluding the first one)
+  const values = data.slice(1).map(row => parseFloat(row[2])); // Extract values from the third column
+
+  // Only take the last 9 labels and values
+  const lastLabels = labels.slice(-9);
+  const lastValues = values.slice(-9);
 
   const ctx = document.getElementById('chart2').getContext('2d');
   new Chart(ctx, {
     type: 'line',
     data: {
-      labels: labels,
+      labels: lastLabels,
       datasets: [{
-        label: 'Dataset 2',
-        data: values,
+        label: 'Dataset 2 (Last 9 Values)',
+        data: lastValues,
         backgroundColor: 'rgba(153, 102, 255, 0.2)',
         borderColor: 'rgba(153, 102, 255, 1)',
         borderWidth: 1
