@@ -355,11 +355,12 @@ li{
   text-decoration: underline;
   font-family: Boston;
 }
+ /* 
 #about-body{
   
   width:90%;
-  margin-left: 100px;
-}
+  margin-left: 100px; 
+}*/
 #contact{
   text-align: left;
   background-color: #8a817c;
