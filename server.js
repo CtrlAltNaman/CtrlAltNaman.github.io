@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
@@ -6,16 +5,18 @@ const { Parser } = require("json2csv");
 
 app.use(bodyParser.json());
 
-require('dotenv').config(); // Load environment variables from .env file
+// MongoDB Connection
 const mongoose = require('mongoose');
 
-// Connect to MongoDB using the connection string from the .env file
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+// Direct MongoDB connection string (replace with your actual string)
+const MONGO_URI = "mongodb+srv://HardWired:SIH@2024@cluster0.16amw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
+// Connect to MongoDB using the connection string
+mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB Atlas'))
   .catch((err) => console.error('Error connecting to MongoDB Atlas:', err));
 
-// Your other server code here...
-
+// Schema and model for frequency data
 const frequencySchema = new mongoose.Schema({
     frequency: Number,
     timestamp: { type: Date, default: Date.now }
@@ -33,7 +34,6 @@ app.post("/data", async (req, res) => {
     await Frequency.create({ frequency });
     res.send("Data stored");
 });
-
 
 // Send data to website
 app.get("/get-data", async (req, res) => {
