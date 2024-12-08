@@ -15,47 +15,47 @@ body {
 
 @font-face {
   font-family: Neutrons;
-  src: url(neutrons.ttf);
+  src: url(/fonts/neutrons.ttf);
 }
 
 @font-face{
   font-family: Boston;
-  src: url(boston.ttf);
+  src: url(/fonts/boston.ttf);
 }
 
 @font-face{
   font-family: Rogshire;
-  src: url(rogshire.ttf);
+  src: url(/fonts/rogshire.ttf);
 }
 
 @font-face{
   font-family: Vampire;
-  src: url(vampire.ttf);
+  src: url(/fonts/vampire.ttf);
 }
 
 @font-face{
   font-family: GoodBrush;
-  src: url(goodbrush.ttf);
+  src: url(/fonts/goodbrush.ttf);
 }
 
 @font-face{
   font-family: Gloryse;
-  src: url(gloryse.ttf)
+  src: url(/fonts/gloryse.ttf)
 }
 
 @font-face{
   font-family: Lemon;
-  src: url(Lemon.otf);
+  src: url(/fonts/Lemon.otf);
 }
 
 @font-face{
   font-family: Ready;
-  src: url(Ready.ttf);
+  src: url(/fonts/Ready.ttf);
 }
 
 @font-face{
   font-family: Stanford;
-  src: url(Stanford_Breath.ttf);
+  src: url(/fonts/Stanford_Breath.ttf);
 }
 
 .navbar{
